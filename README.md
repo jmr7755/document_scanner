@@ -1,4 +1,4 @@
-## document_scanner
+## Document Scanner
 
 In This repo, I am trying to replicate how cam scannaer works in back ground.
 
