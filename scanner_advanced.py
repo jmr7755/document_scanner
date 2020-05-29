@@ -104,9 +104,9 @@ T = threshold_local(warped, 11, offset = 10, method = "gaussian")
 warped = (warped > T).astype("uint8") * 255
 
 
-#cv2.imshow("Original", imutils.resize(orig, height = 650))
-#cv2.imshow("Scanned", imutils.resize(warped, height = 650))
-cv2.imshow("Edged", warped)
+cv2.imshow("Original", imutils.resize(orig, height = 650))
+cv2.imshow("Scanned", imutils.resize(warped, height = 650))
+cv2.imshow("Edged", imutils.resize(edged, height = 650))
 count = 1
 
 if cv2.waitKey(0) & 0xFF == ord('s'):
